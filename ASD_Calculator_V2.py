@@ -1,9 +1,3 @@
-'''
-Owen Coffee
-8/12/24
-ASD_Calculator_V2.py
-'''
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import welch, find_peaks
@@ -134,54 +128,4 @@ plt.grid(True)
 plt.legend()
 
 plt.tight_layout()
-
-# # Ask the user if they want to save the file
-# save_file = input("Do you want to save the plots and peak data to a PDF file? (yes/no): ").strip().lower()
-
-# if save_file == 'yes':
-#     file_path = input("Please enter the file path where you want to save the PDF (including the file name, e.g., 'output.pdf'): ").strip()
-    
-#     # Save the figure as a PDF
-#     plt.savefig(file_path)
-
-#     # Also, save peak information in a text file
-#     base_path, _ = os.path.splitext(file_path)
-#     peak_info_path = base_path + "_peaks.txt"
-    
-#     with open(peak_info_path, 'w') as f:
-#         f.write("Peaks in Original Uniform Noise PSD:\n")
-#         for i in peaks_psd_uniform:
-#             f.write(f"Frequency: {frequencies[i]} Hz, PSD: {psd_uniform[i]} W/Hz\n")
-        
-#         f.write("\nPeaks in Sorted Uniform Noise PSD:\n")
-#         for i in peaks_psd_sorted_uniform:
-#             f.write(f"Frequency: {frequencies[i]} Hz, PSD: {psd_sorted_uniform[i]} W/Hz\n")
-        
-#         f.write("\nPeaks in Original Gaussian Noise PSD:\n")
-#         for i in peaks_psd_gaussian:
-#             f.write(f"Frequency: {frequencies[i]} Hz, PSD: {psd_gaussian[i]} W/Hz\n")
-        
-#         f.write("\nPeaks in Sorted Gaussian Noise PSD:\n")
-#         for i in peaks_psd_sorted_gaussian:
-#             f.write(f"Frequency: {frequencies[i]} Hz, PSD: {psd_sorted_gaussian[i]} W/Hz\n")
-        
-#         f.write("\nPeaks in Original Uniform Noise ASD:\n")
-#         for i in peaks_asd_uniform:
-#             f.write(f"Frequency: {frequencies[i]} Hz, ASD: {asd_uniform[i]} W/√Hz\n")
-        
-#         f.write("\nPeaks in Sorted Uniform Noise ASD:\n")
-#         for i in peaks_asd_sorted_uniform:
-#             f.write(f"Frequency: {frequencies[i]} Hz, ASD: {asd_sorted_uniform[i]} W/√Hz\n")
-        
-#         f.write("\nPeaks in Original Gaussian Noise ASD:\n")
-#         for i in peaks_asd_gaussian:
-#             f.write(f"Frequency: {frequencies[i]} Hz, ASD: {asd_gaussian[i]} W/√Hz\n")
-        
-#         f.write("\nPeaks in Sorted Gaussian Noise ASD:\n")
-#         for i in peaks_asd_sorted_gaussian:
-#             f.write(f"Frequency: {frequencies[i]} Hz, ASD: {asd_sorted_gaussian[i]} W/√Hz\n")
-    
-#     print(f"Plots saved to {file_path}")
-#     print(f"Peak information saved to {peak_info_path}")
-
 plt.show()
